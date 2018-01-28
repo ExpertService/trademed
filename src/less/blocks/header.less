@@ -1,0 +1,191 @@
+/*
+позиционирование
+блочная модель
+типографика
+оформление
+анимация
+прочее
+ */
+/*@media screen and (max-width: 940px){
+
+}
+@media screen and (max-width: 480px) {
+
+}*/
+
+.header{
+  max-width: 1130px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 22px;
+}
+@media screen and (max-width: 570px) {
+  .header{
+    width: 100%;
+  }
+}
+
+.header__first-line{
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.header__trademed-logo-container{
+  position: absolute;
+  top: -37px;
+}
+
+@media screen and (max-width: 940px){
+  .header__trademed-logo-container{
+    position: static;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header__trademed-logo-container{
+    position: static;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.header__harol-container{
+  position: absolute;
+  right: 0;
+  top: -11px;
+}
+
+@media screen and (max-width: 940px){
+  .header__harol-container{
+    top: 25px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header__harol-container{
+    position: static;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.header__tel-email-container{
+  margin-right: auto;
+  margin-left: auto;
+  width: 570px;
+}
+@media screen and (max-width: 570px) {
+  .header__tel-email-container{
+    width: 100%;
+  }
+}
+
+
+.tel-email-container__tel{
+  float: left;
+  padding-left: 38px;
+  font-family: pfdindisplaypro-bold, Arial, sans-serif;
+  font-size: 23px;
+}
+
+@media screen and (max-width: 570px) {/*для мобильного*/
+  .tel-email-container__tel{
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.tel-email-container__email{
+  float: right;
+  padding-right: 38px;
+  font-family: pfdindisplaypro-bold, Arial, sans-serif;
+  font-size: 23px;
+}
+
+@media screen and (max-width: 570px) {/*для мобильного*/
+  .tel-email-container__email{
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+i{
+  display: inline-block;
+  margin-right: 5px;
+  color: #49b778;
+}
+
+.header__second-line{
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  width: 570px;
+}
+@media screen and (max-width: 570px) {
+  .header__second-line{
+    width: 100%;
+  }
+}
+
+.about-manufacture{
+  float: left;
+  margin-left: 100px;
+}
+@media screen and (max-width: 570px) {
+  .about-manufacture{
+    float: none;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.about-company{
+  float: right;
+  margin-right: 100px;
+}
+@media screen and (max-width: 570px) {
+  .about-company{
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.about-manufacture a{
+  display: inline-block;
+  border-bottom: 2px solid #217da4;
+  height: 100%;
+  text-align: center;
+  font-family: pfdindisplaypro-bold, Arial, sans-serif;
+  font-size: 16px;
+  color: #217da4;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.about-manufacture a:hover{
+  border-bottom: none;
+  color: #52b0d7;
+}
+
+.about-company a{
+  display: inline-block;
+  border-bottom: 2px solid #217da4;
+  height: 100%;
+  text-align: center;
+  font-family: pfdindisplaypro-bold, Arial, sans-serif;
+  font-size: 16px;
+  color: #217da4;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.about-company a:hover{
+  border-bottom: none;
+  color: #52b0d7;
+}

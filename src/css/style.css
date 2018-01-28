@@ -1,0 +1,624 @@
+@font-face {
+  font-family: 'pfdindisplaypro-thin';
+  src: url('../fonts/pfdindisplaypro-thin.eot');
+  src: local('☺'), url('../fonts/pfdindisplaypro-thin.woff') format('woff'), url('../fonts/pfdindisplaypro-thin.ttf') format('truetype'), url('../fonts/pfdindisplaypro-thin.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pfdindisplaypro-med';
+  src: url('../fonts/pfdindisplaypro-med.eot');
+  src: local('☺'), url('../fonts/pfdindisplaypro-med.woff') format('woff'), url('../fonts/pfdindisplaypro-med.ttf') format('truetype'), url('../fonts/pfdindisplaypro-med.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pfdindisplaypro-xthin';
+  src: url('../fonts/pfdindisplaypro-xthin.eot');
+  src: local('☺'), url('../fonts/pfdindisplaypro-xthin.woff') format('woff'), url('../fonts/pfdindisplaypro-xthin.ttf') format('truetype'), url('../fonts/pfdindisplaypro-xthin.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pfdindisplaypro-black';
+  src: url('../fonts/pfdindisplaypro-black.eot');
+  src: local('☺'), url('../fonts/pfdindisplaypro-black.woff') format('woff'), url('../fonts/pfdindisplaypro-black.ttf') format('truetype'), url('../fonts/pfdindisplaypro-black.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pfdindisplaypro-light';
+  src: url('../fonts/pfdindisplaypro-light.eot');
+  src: local('☺'), url('../fonts/pfdindisplaypro-light.woff') format('woff'), url('../fonts/pfdindisplaypro-light.ttf') format('truetype'), url('../fonts/pfdindisplaypro-light.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pfdindisplaypro-reg';
+  src: url('../fonts/pfdindisplaypro-reg.eot');
+  src: local('☺'), url('../fonts/pfdindisplaypro-reg.woff') format('woff'), url('../fonts/pfdindisplaypro-reg.ttf') format('truetype'), url('../fonts/pfdindisplaypro-reg.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pfdindisplaypro-bold';
+  src: url('../fonts/pfdindisplaypro-bold.eot');
+  src: local('☺'), url('../fonts/pfdindisplaypro-bold.woff') format('woff'), url('../fonts/pfdindisplaypro-bold.ttf') format('truetype'), url('../fonts/pfdindisplaypro-bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+body {
+  background-color: #419ec5;
+}
+/*
+позиционирование
+блочная модель
+типографика
+оформление
+анимация
+прочее
+ */
+.second-screen-container {
+  height: 3200px;
+  background-image: url(../img/bg-second-block.png);
+  background-position: center 729px;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 940px) {
+  .second-screen-container {
+    background-image: url(../img/bg-second-block-tablet.png);
+  }
+}
+@media screen and (max-width: 480px) {
+  .second-screen-container {
+    background-image: url(../img/bg-second-block-mobile.png);
+  }
+}
+.upper-line {
+  height: 9px;
+  background-color: #419ec5;
+}
+.first-screen-container {
+  height: 937px;
+  background-image: url(../img/bg-first-block.png);
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 940px) {
+  .first-screen-container {
+    background-image: url(../img/bg-first-block-tablet.png);
+  }
+}
+@media screen and (max-width: 480px) {
+  .first-screen-container {
+    background-image: url(../img/bg-first-block-mobile.png);
+  }
+}
+.logo-container {
+  height: 471px;
+  margin-bottom: 27px;
+  background-image: url(../img/bg-logo-block.png);
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 940px) {
+  .logo-container {
+    height: 370px;
+    background-position: center -100px;
+    background-image: url(../img/bg-logo-block-tablet.png);
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo-container {
+    height: 280px;
+    background-position: center -200px;
+    background-image: url(../img/bg-logo-block-mobile.png);
+  }
+}
+.logo-container:before {
+  display: block;
+  content: '';
+  height: 63px;
+}
+.logo-container__rhombus {
+  position: relative;
+  margin: auto;
+  height: 342px;
+  width: 342px;
+  background-color: white;
+  opacity: 0.86;
+  transform: rotate(-45deg) skewX(2deg) skewY(2deg);
+}
+@media screen and (max-width: 940px) {
+  .logo-container__rhombus {
+    height: 242px;
+    width: 242px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo-container__rhombus {
+    height: 190px;
+    width: 190px;
+  }
+  .logo-container:before {
+    height: 43px;
+  }
+}
+.logo-container__rhombus-text {
+  position: absolute;
+  top: 120px;
+  left: -30px;
+  width: 400px;
+  transform: rotate(45deg);
+  text-align: center;
+}
+.rhombus-text__firstline {
+  margin-bottom: -5px;
+  font-family: pfdindisplaypro-med, Arial, sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.rhombus-text__secondline {
+  margin-bottom: -5px;
+  font-family: pfdindisplaypro-black, Arial, sans-serif;
+  font-size: 41px;
+  text-transform: uppercase;
+  color: #49b778;
+}
+.rhombus-text__thirdline {
+  font-family: pfdindisplaypro-reg, Arial, sans-serif;
+  font-size: 21px;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+}
+@media screen and (max-width: 940px) {
+  .logo-container__rhombus-text {
+    top: 87px;
+    left: -80px;
+  }
+  .rhombus-text__firstline {
+    font-size: 20px;
+  }
+  .rhombus-text__secondline {
+    font-size: 31px;
+  }
+  .rhombus-text__thirdline {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo-container__rhombus-text {
+    top: 70px;
+    left: -105px;
+  }
+  .rhombus-text__firstline {
+    font-size: 17px;
+  }
+  .rhombus-text__secondline {
+    font-size: 25px;
+  }
+  .rhombus-text__thirdline {
+    font-size: 12px;
+  }
+}
+/*
+позиционирование
+блочная модель
+типографика
+оформление
+анимация
+прочее
+ */
+/*@media screen and (max-width: 940px){
+
+}
+@media screen and (max-width: 480px) {
+
+}*/
+.trademed-square {
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 56px solid #419ec5;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  height: 0;
+  width: 570px;
+  color: #ffffff;
+  font-size: 20px;
+}
+@media screen and (max-width: 940px) {
+  .trademed-square {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .trademed-square {
+    width: 60%;
+  }
+}
+.trademed-square__center-container {
+  margin-top: -55px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  text-align: center;
+}
+@media screen and (max-width: 940px) {
+  .trademed-square__center-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .trademed-square__center-container {
+    width: 100%;
+  }
+}
+.trademed-square__first-line {
+  margin-right: auto;
+  margin-left: auto;
+  font-family: pfdindisplaypro-bold, Arial, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 940px) {
+  /*для планшета*/
+  .trademed-square__first-line {
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /*для мобильного*/
+  .trademed-square__first-line {
+    font-size: 100%;
+  }
+}
+.trademed-square__second-line {
+  margin-right: auto;
+  margin-left: auto;
+  font-family: pfdindisplaypro-thin, Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 570px) {
+  /*для мобильного*/
+  .trademed-square__second-line {
+    font-size: 60%;
+  }
+}
+/*
+позиционирование
+блочная модель
+типографика
+оформление
+анимация
+прочее
+ */
+/*@media screen and (max-width: 940px){
+
+}
+@media screen and (max-width: 480px) {
+
+}*/
+.header {
+  max-width: 1130px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 22px;
+}
+@media screen and (max-width: 570px) {
+  .header {
+    width: 100%;
+  }
+}
+.header__first-line {
+  position: relative;
+  margin-bottom: 30px;
+}
+.header__trademed-logo-container {
+  position: absolute;
+  top: -37px;
+}
+@media screen and (max-width: 940px) {
+  .header__trademed-logo-container {
+    position: static;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header__trademed-logo-container {
+    position: static;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+.header__harol-container {
+  position: absolute;
+  right: 0;
+  top: -11px;
+}
+@media screen and (max-width: 940px) {
+  .header__harol-container {
+    top: 25px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header__harol-container {
+    position: static;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+.header__tel-email-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 570px;
+}
+@media screen and (max-width: 570px) {
+  .header__tel-email-container {
+    width: 100%;
+  }
+}
+.tel-email-container__tel {
+  float: left;
+  padding-left: 38px;
+  font-family: pfdindisplaypro-bold, Arial, sans-serif;
+  font-size: 23px;
+}
+@media screen and (max-width: 570px) {
+  /*для мобильного*/
+  .tel-email-container__tel {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    text-align: center;
+  }
+}
+.tel-email-container__email {
+  float: right;
+  padding-right: 38px;
+  font-family: pfdindisplaypro-bold, Arial, sans-serif;
+  font-size: 23px;
+}
+@media screen and (max-width: 570px) {
+  /*для мобильного*/
+  .tel-email-container__email {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    text-align: center;
+  }
+}
+i {
+  display: inline-block;
+  margin-right: 5px;
+  color: #49b778;
+}
+.header__second-line {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  width: 570px;
+}
+@media screen and (max-width: 570px) {
+  .header__second-line {
+    width: 100%;
+  }
+}
+.about-manufacture {
+  float: left;
+  margin-left: 100px;
+}
+@media screen and (max-width: 570px) {
+  .about-manufacture {
+    float: none;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+.about-company {
+  float: right;
+  margin-right: 100px;
+}
+@media screen and (max-width: 570px) {
+  .about-company {
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+}
+.about-manufacture a {
+  display: inline-block;
+  border-bottom: 2px solid #217da4;
+  height: 100%;
+  text-align: center;
+  font-family: pfdindisplaypro-bold, Arial, sans-serif;
+  font-size: 16px;
+  color: #217da4;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.about-manufacture a:hover {
+  border-bottom: none;
+  color: #52b0d7;
+}
+.about-company a {
+  display: inline-block;
+  border-bottom: 2px solid #217da4;
+  height: 100%;
+  text-align: center;
+  font-family: pfdindisplaypro-bold, Arial, sans-serif;
+  font-size: 16px;
+  color: #217da4;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.about-company a:hover {
+  border-bottom: none;
+  color: #52b0d7;
+}
+/*
+позиционирование
+блочная модель
+типографика
+оформление
+анимация
+прочее
+ */
+/*@media screen and (max-width: 940px){
+
+}
+@media screen and (max-width: 480px) {
+
+}*/
+.white-rect {
+  flex: none;
+  margin-left: 25px;
+  margin-right: 25px;
+  box-sizing: border-box;
+  border: solid 1px white;
+  border-radius: 3px;
+  width: 248px;
+  height: 152px;
+  background-color: #ffffff;
+  padding-top: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.31);
+  font-family: pfdindisplaypro-reg, Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+.first-screen-container__rect-container {
+  display: flex;
+  justify-content: center;
+  height: 152px;
+  width: 100%;
+}
+@media screen and (max-width: 940px) {
+  .first-screen-container__rect-container {
+    display: none;
+  }
+}
+.rect-container__certificate {
+  background-image: url(../img/icons/img-cert.png);
+  background-position: center 21px;
+  background-repeat: no-repeat;
+}
+.rect-container__auto {
+  margin-top: 25px;
+  background-image: url(../img/icons/img-auto.png);
+  background-position: center 21px;
+  background-repeat: no-repeat;
+}
+.rect-container__medicine {
+  background-image: url(../img/icons/img-medicine.png);
+  background-position: center 21px;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 940px) {
+  .rect-container__auto {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .rect-container__auto {
+    margin-top: 0;
+  }
+}
+/* Задаем сброс обтекания */
+.clear {
+  margin-top: -1px;
+  height: 1px;
+  clear: both;
+  zoom: 1;
+}
+/* Slider */
+.slider {
+  display: none;
+  /* Ширина контейнера */
+  width: 298px;
+  /* Внешние тступы сверху и снизу */
+  margin: 50px auto;
+  /* Внутренние отступы для ссылок navy */
+  padding: 0 30px;
+  /* Позиционирование */
+  position: relative;
+}
+@media screen and (max-width: 940px) {
+  .slider {
+    display: block;
+  }
+}
+@media screen and (max-width: 570px) {
+  .slider {
+    margin: 20px auto;
+  }
+}
+/* Двойной клик по кнопкам вперед/назад вызывает выделение всех элементов слайдера,
+поэтому предотвращаем это */
+.slider::-moz-selection {
+  background: transparent;
+  color: #fff;
+  text-shadow: none;
+}
+.slider::selection {
+  background: transparent;
+  color: #fff;
+  text-shadow: none;
+}
+.slide-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  /* Скроем то что выходит за границы */
+  overflow: hidden;
+}
+.slide-wrap {
+  position: relative;
+  left: 0px;
+  top: 0;
+  /* максимально возможная ширина обертки слайдера */
+  width: 10000000px;
+}
+.slide-item {
+  /* Ширина слайда */
+  width: 250px;
+  /* Внутренние отступы */
+  /*padding: 10px;*/
+  /* Обтекание */
+  float: left;
+}
+.slide-title {
+  /* Шрифт */
+  font: bold 16px monospace;
+  /* Указываем, что элемент блочный */
+  display: block;
+}
+/* навигация вперед/назад */
+.navy {
+  /* абсолютное позиционирование */
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  /* ширина элементов */
+  width: 30px;
+  cursor: pointer;
+}
+.prev-slide {
+  left: 0;
+  background: url(../img/icons/img-cert.png) 11px 40% no-repeat;
+}
+.next-slide {
+  right: 0;
+  background: url(../img/icons/img-cert.png) 13px 40% no-repeat;
+}
+/* навигация старт/пауза */
